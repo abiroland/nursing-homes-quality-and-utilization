@@ -1,5 +1,5 @@
 ---
-title: "Exploratory analysis of Nursing Homes Quality and Utilization in the US"
+title: "Analysis of Nursing Homes Quality and Utilization in the US"
 author: "Roland Abi"
 format: html
 editor: visual
