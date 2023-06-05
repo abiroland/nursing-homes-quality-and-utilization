@@ -47,7 +47,7 @@ plot_missing(
 
 ```
 
-## Highest percentage of nursing homes
+## Percentage utilization of nursing homes
 
 ```{r}
 #| fig-cap: |
@@ -56,6 +56,8 @@ plot_missing(
 #| output-location: slide
 plt2
 ```
+
+@fig-top-10-states shows the top states with the highest percentage of nursing homes. The analysis showed the state of California (7.74%) as having the highest percentage of nursing home, closely followed by Texas (7.72%).
 
 ## Nursing home utilization
 
@@ -66,6 +68,8 @@ plt2
 
 plt3
 ```
+
+@fig-nursing-home-utilization shows the percentage utilization of nursing homes with 500 beds or more and their ownership type. We observed that majority of government owned nursing homes experience on average above 90% utilization with the exception of Henry J Carter Skilled Nursing Facility.
 
 ## Overall rating of nursing homes
 
@@ -78,6 +82,8 @@ plt3
 plt6
 ```
 
+@fig-overall-rating explored the overall rating of nursing homes with over 700 bed space in US. Laguna Honda Hospital and Rehabilitation Center in California had an overall rating of 4 out of 5; Iowa Veterans Home in Iowa, The New Jewish Home, Harry and Jeanette Weinberg, Kings Harbor Multicare Center and Henry J Carter Skilled Nursing Facility In New York respectively, had an overall rating 5. Meanwhile Coler Rehabilitation and Nursing Care Center and Isabella Geriatric Center Inc also in New York, had an overall rating of 4 respectively. Furthermore, Fair Acres Geriatric Center and Glendale Northampton County in Pennsylvania had an overall rating of 1 and 4 respectively.
+
 ## Overall staff rating and incidents
 
 ```{r}
@@ -85,6 +91,8 @@ plt6
 #| tbl-cap: Description of overall staff rating, beds and incidents
 tbl1
 ```
+
+@tbl-summary-of-each-nursing-home displays the overall staff rating number of residents in certified beds, facility reported incidents and number of fines. Spectrum Health Rehab & Nursing Center-Fuller Ave with an overall staff rating of 5 had the highest reported facility incidents as well as the highest number of fines, followed by Arden House with 20 reported incidents and 3 fines. The analysis showed that facilities with 200 or more residents in certified beds have experienced at least one incident and at least one fine.
 
 ## Total health score
 
@@ -99,6 +107,8 @@ tbl1
 plt7
 ```
 
+Total health score attained at cycle 1 and cycle 2 for nursing homes with 700 or more bed spaces was also explored. Fair Acres Geriatric Center gained considerable increase in total health score from 72 in cycle one, to 114 in cycle 2. Laguna Honda Hospital & Rehabilitation Center, experienced some increase in total health score although not as pronounced as Fair Acres Geriatric Center. Other nursing home that experienced a similar trend were Isabella Geriatric Center Inc and Iowa Veterans Home (@fig-total-health-score )
+
 ## Average staff hours
 
 ```{r}
@@ -106,6 +116,8 @@ plt7
 #| tbl-cap: Average staff hours across states
 tbl2
 ```
+
+@tbl-average-staff-hours shows the top 10 states with the highest average staffing hours. Alaska has had the highest CNA staffing hours on average, while in the District of Columbia, Florida and Hawaii average working hours for CNA staff was 2.8hours. Average working hours for LPN staffs was between 0.4 and 1.0 hours. Alaska also recorded the highest average (2.1) working hours for RN staff.
 
 ## Average health revisit score
 
@@ -115,29 +127,17 @@ tbl2
 plt8
 ```
 
-## Note 1:
-
-@fig-top-10-states shows the top states with the highest percentage of nursing homes. The analysis showed the state of California (7.74%) as having the highest percentage of nursing home, closely followed by Texas (7.72%). @fig-nursing-home-utilization shows the percentage utilization of nursing homes with 500 beds or more and their ownership type. We observed that majority of government owned nursing homes experience on average above 90% utilization with the exception of Henry J Carter Skilled Nursing Facility.
-
-## Note 2:
-
-@fig-overall-rating explored the overall rating of nursing homes with over 700 bed space in US. Laguna Honda Hospital and Rehabilitation Center in California had an overall rating of 4 out of 5; Iowa Veterans Home in Iowa, The New Jewish Home, Harry and Jeanette Weinberg, Kings Harbor Multicare Center and Henry J Carter Skilled Nursing Facility In New York respectively, had an overall rating 5. Meanwhile Coler Rehabilitation and Nursing Care Center and Isabella Geriatric Center Inc also in New York, had an overall rating of 4 respectively. Furthermore, Fair Acres Geriatric Center and Glendale Northampton County in Pennsylvania had an overall rating of 1 and 4 respectively.
-
-## Note 3:
-
-@tbl-summary-of-each-nursing-home displays the overall staff rating number of residents in certified beds, facility reported incidents and number of fines. Spectrum Health Rehab & Nursing Center-Fuller Ave with an overall staff rating of 5 had the highest reported facility incidents as well as the highest number of fines, followed by Arden House with 20 reported incidents and 3 fines. The analysis showed that facilities with 200 or more residents in certified beds have experienced at least one incident and at least one fine.
-
-## Note 4:
-
-Total health score attained at cycle 1 and cycle 2 for nursing homes with 700 or more bed spaces was also explored. Fair Acres Geriatric Center gained considerable increase in total health score from 72 in cycle one, to 114 in cycle 2. Laguna Honda Hospital & Rehabilitation Center, experienced some increase in total health score although not as pronounced as Fair Acres Geriatric Center. Other nursing home that experienced a similar trend were Isabella Geriatric Center Inc and Iowa Veterans Home (@fig-total-health-score )
-
-## Note 5:
-
-@tbl-average-staff-hours shows the top 10 states with the highest average staffing hours. Alaska has had the highest CNA staffing hours on average, while in the District of Columbia, Florida and Hawaii average working hours for CNA staff was 2.8hours. Average working hours for LPN staffs was between 0.4 and 1.0 hours. Alaska also recorded the highest average (2.1) working hours for RN staff.
-
-## Note 6:
-
 Average health revisit score across three cycles was explored. It was observed that Apex Center and Barnes-Kasson County Hospital which offered Medicare and Medicaid services in Idaho and Pennsylvannia reported a somewhat similar revisit score across the three cycles. Health revisit score for Carney Nursing Center located in Kansas which had provision for only Medicaid showed a high-low-high trend across the three cycles. Lawrence Hall Nursing Center located in Arizona reported a high revisit score in cycle 2 both was lower in cycle 1 and 3 (@fig-health-revisit-score )
+
+## Average fines 
+
+```{r}
+#| label: fig-average-fines
+#| fig-cap: Average fines by each ownership
+plt9
+```
+
+Average fines paid out by each nursing home between 2013 and 2016 was explored in @fig-average-fines . Government owned nursing homes paid the highest fines in 2013 while between 2014 and 2015 privately owned for profit nursing homes paid the highest fines, while private non-profit nursing homes paid out the highest fines on average in 2016. On average, the total highest fines were paid in 2013 and 2016.
 
 ## Credits
 

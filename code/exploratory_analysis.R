@@ -294,3 +294,41 @@ plt8 <- ggparcoord(df6,
     legend.position = "top",
     legend.title = element_blank())
   
+plt9 <- df4 |>
+  mutate(
+    amt = as.numeric(str_extract(total_amount_of_fines_in_dollars, "([\\d]+)")),
+    cycle2_year = year(cycle_2_standard_health_survey_date)
+  ) |>
+  na.omit() |>
+  group_by(cycle2_year, new_ownership) |>
+  summarise(
+    avg_fines = mean(amt)
+  ) |>
+  ggplot(aes(
+    x = cycle2_year, y = avg_fines,
+    fill = new_ownership
+  )) +
+  geom_bar(stat = "identity", position = position_dodge(preserve = "single")) +
+  scale_y_continuous(labels = scales::dollar_format(prefix = "$")) +
+  geom_hline(yintercept = 0, lwd = 1, color = "#333333") +
+  scale_fill_tableau() +
+  theme_bw() +
+  labs(
+    title = "Average fines by each ownership type",
+    y = "Average fine",
+    x = "year",
+    caption = "Kaggle: US Nursing home data",
+    fill = "Ownership"
+  )  +
+  theme(
+    plot.title = element_text(
+      face = "bold",
+      size = 15,
+      hjust = .5
+    ),
+    axis.text.y = element_text(size = 10),
+    legend.position = "top",
+    axis.title.x = element_text(size = 15),
+    axis.title.y = element_text(size = 15))
+  
+  
